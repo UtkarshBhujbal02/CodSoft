@@ -88,7 +88,6 @@ img {
   color: var(--color-base);
 }
 
-
 .navbar {
   background-color: var(--color-base);
 }
@@ -107,7 +106,6 @@ img {
   color: var(--color-brand);
 }
 
-
 .skillbox {
   width: 150px;
   height: 150px;
@@ -118,6 +116,14 @@ img {
   font-size: 32px;
   background-color: var(--color-brand3);
   color: var(--color-base);
+}
+
+.photocard {
+  height: 200px;
+  width: 200px;
+  border: 8px solid var(--color-brand);
+
+
 }
 
 @media (min-width: 992px) {
@@ -180,7 +186,6 @@ img {
   width: 60%;
 }
 
-
 .card-custom .card-custom-image {
   overflow: hidden;
 }
@@ -192,7 +197,6 @@ img {
 .card-custom:hover .card-custom-image img {
   transform: scale(1.1);
 }
-
 
 #contact .form-control {
   background-color: var(--color-base);
@@ -211,10 +215,6 @@ img {
 
 #contact input.form-control {
   height: 44px;
-}
-
-
-.social-icons {
 }
 
 .social-icons a {
