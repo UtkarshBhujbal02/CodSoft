@@ -1,0 +1,434 @@
+@font-face {
+  font-family: Product Sans;
+  src: url(Fonts/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+  font-family: Product Sans B;
+  src: url(Fonts/Product\ Sans\ Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Product Sans B;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  background-color: orangered;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vw 10vw;
+  height: 10vh;
+  width: 100%;
+  z-index: 99;
+}
+
+#logo {
+  height: 30px;
+  width: 40px;
+}
+nav a,
+i {
+  font-size: 1.25vw;
+  text-decoration: none;
+  color: #fff;
+}
+
+.center-nav {
+  display: flex;
+  gap: 3vw;
+}
+
+nav i {
+  font-size: 1.5vw;
+}
+
+.one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    rgb(251, 141, 32),
+    rgba(255, 68, 0, 0.797),
+    rgba(255, 84, 16, 0.677)
+  );
+}
+
+#fanta {
+  position: absolute;
+  width: 40%;
+  z-index: 2;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+#orange-cut {
+  position: absolute;
+  top: 10%;
+  left: 32%;
+  width: 15%;
+  z-index: 1;
+}
+
+#orange {
+  position: absolute;
+  width: 20%;
+  z-index: 3;
+  top: 55%;
+  right: 30%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#leaf {
+  position: absolute;
+  width: 18%;
+  top: 10%;
+  left: 0%;
+  transform: rotate(60deg);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#leaf2 {
+  position: absolute;
+  width: 12%;
+  top: 70%;
+  left: 80%;
+  transform: rotate(-90deg);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#cocunut-leaf {
+  position: absolute;
+  width: 20%;
+  top: 15%;
+  right: 0%;
+}
+
+.one h1 {
+  font-size: 25vw;
+  font-family: Product Sans B;
+  color: #fff;
+}
+
+.two {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: #513a1c;
+}
+
+.lft-two,
+.rght-two {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  gap: 5vh;
+}
+
+.lft-two svg {
+  margin-top: 50vh;
+
+  width: 90%;
+  transform: rotateX(50deg);
+}
+
+#fanta-mob {
+  margin-top: 50vh;
+  width: 90%;
+  left: "33%";
+  top: "220%";
+}
+
+.rght-two h1 {
+  color: #fff;
+  font-size: 5vw;
+}
+
+.rght-two p {
+  color: #fff;
+  font-size: 1vw;
+  width: 80%;
+}
+
+.three {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    rgb(251, 141, 32),
+    rgba(255, 68, 0, 0.797),
+    rgba(255, 84, 16, 0.677)
+  );
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25vw;
+  height: 70vh;
+  border-radius: 20px;
+  margin-top: 20vh;
+  background-color: #fff;
+  gap: 2vh;
+}
+
+.card h1 {
+  margin-top: 40vh;
+  font-size: 3vw;
+}
+
+.card button {
+  padding: 1vw 2vw;
+  font-size: 1vw;
+  border: none;
+  border-radius: 50px;
+  color: #513a1c;
+  background-color: rgba(255, 149, 0);
+}
+
+#sprite {
+  position: absolute;
+  width: 13%;
+  top: 16%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#cocacola {
+  position: absolute;
+  width: 26%;
+  top: 16%;
+
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#fanta-mob2 {
+  position: absolute;
+  width: 26%;
+  top: 16%;
+
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#lemon {
+  position: absolute;
+  width: 25vw;
+  top: 0%;
+  left: "50%";
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#orange2 {
+  position: absolute;
+  width: 19vw;
+  top: 5%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#orange3 {
+  position: absolute;
+  width: 19vw;
+  /* top: 5%;
+  right: 10%; */
+  top: 7%;
+  right: "50%";
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.footer {
+  background-color: rgba(255, 84, 16, 0.677);
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  #fanta-mob {
+    display: none;
+  }
+
+  #fanta-mob2 {
+    display: none;
+  }
+}
+
+@media (max-width: 679px) {
+  * {
+    font-size: 16px; /* Set a base font size for easier responsiveness */
+  }
+  nav {
+    height: 10vh;
+    width: 100%;
+  }
+
+  #fanta {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    align-items: center;
+  }
+
+  .one {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #orange-cut {
+    position: absolute;
+    top: 33%;
+    left: 25%;
+    width: 35%;
+  }
+
+  #orange {
+    position: absolute;
+    width: 35%;
+    top: 75%;
+    right: 20%;
+  }
+
+  #leaf {
+    width: 30%;
+    top: 8%;
+    left: 10%;
+  }
+
+  #leaf2 {
+    width: 20%;
+    top: 70%;
+  }
+
+  #cocunut-leaf {
+    width: 30%;
+    top: 10%;
+    right: 0%;
+  }
+
+  .one h1 {
+    position: absolute;
+    top: 20%;
+    size: 100%;
+  }
+
+  nav a,
+  i {
+    font-size: 8px; /* Adjust font size for navigation items */
+  }
+  .two {
+    width: 100%;
+    height: 50vh;
+    background: #513a1c;
+  }
+
+  .lft-two svg {
+    position: absolute;
+    margin-top: 40%; /* Adjust margin for smaller screens */
+    width: 50%; /* Reduce the width of the SVG */
+    transform: rotateX(50deg);
+  }
+
+  #fanta-mob {
+    position: absolute;
+    margin-top: 5%; /* Adjust margin for smaller screens */
+    width: 60%;
+    z-index: 40;
+  }
+
+  .three {
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 5vw;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .card {
+    width: 25vw;
+    height: 25vh;
+    border-radius: 20px;
+    margin-top: 10vh;
+    gap: 1vh;
+  }
+
+  .card h1 {
+    margin-top: 40vh;
+    font-size: 3vw;
+  }
+
+  .card button {
+    padding: 1vw 2vw;
+    font-size: 1vw;
+  }
+
+  #lemon {
+    width: 25vw;
+    top: 5%;
+    left: "50%";
+  }
+
+  #orange2 {
+    position: absolute;
+    width: 19vw;
+    top: 7%;
+  }
+
+  #orange3 {
+    position: absolute;
+    width: 19vw;
+    top: 7%;
+    right: "50%";
+  }
+
+  #sprite {
+    width: 14%;
+    top: 13%;
+  }
+
+  #cocacola {
+    width: 28%;
+    top: 13%;
+  }
+
+  #fanta-mob2 {
+    width: 35%;
+    top: 13%;
+    z-index: 66;
+  }
+
+  .card h1 {
+    margin-top: 18vh;
+    font-size: 3vw;
+  }
+
+  .card button {
+    padding: 1vw 1vw;
+    font-size: 1vw;
+  }
+}
